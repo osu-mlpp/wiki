@@ -4,7 +4,7 @@ Welcome to the osu! MLpp project wiki!
 
 Here is the (planned) plan of the Wiki (sub-pages/sub-sections) :
 
-- Prerequisite Knowledge (lower priority)
+- Introduction to osu! and osu! keywords (low prio)
     - osu! presentation (for non-players)
     - Dictionary (for non-players and casuals)
         - osu! general keywords (Modes, mods, beatmaps/maps, mapsets, ...)
@@ -13,24 +13,27 @@ Here is the (planned) plan of the Wiki (sub-pages/sub-sections) :
         - osu! beatmap values ()
         - osu! mods (HD, HR, DT, EZ, FL, ...)
         - ... ?
-- Introduction (mid priority)
+- Introduction to previous pp systems and project motivation (mid prio)
     - pp system definition
+    - rought presentation of pp v1
+    - pp v1 problems
+    - rought presentation of pp v2
+    - pp v2 problems
+    - general advantages and problems of statistical method
+    - how Machine Learning can help
+- Introduction to mathematical and technical definitions
+    - Maths definitions...
     - definition of skill
-    - Previous systems and project motivation
-        - rought presentation of pp v1
-        - pp v1 problems
-        - rought presentation of pp v2
-        - pp v2 problems
-        - general advantages and problems of statistical method
-        - how Machine Learning can help
+    - ... ?
+- MLpp (Machine Learning performance points) system proposal
     - project goals / general idea
     - note about v2 and Modes
-- Part 1 : PP from Statistics (highest priority)
-    - ...
-- Part 2 : Neural Network (mid priority)
-    - ...
-- Part 3 : MLpp in production
-    - ...
-- Required Data for the project / Request to peppy
-- Roadmap and Schedule (merged into the wiki)
+    - Part 1 : PP from Statistics (highest prio)
+        - ...
+    - Part 2 : Neural Network (mid prio)
+        - ...
+    - Part 3 : MLpp in production (low prio)
+        - ...
+- Required Data for the project / Request to peppy (high prio)
+- Roadmap and Schedule (will be merged "merged" into the wiki)
 - ... ?
