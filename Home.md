@@ -1,8 +1,12 @@
+# MLpp Project wiki
+
 Welcome to the osu! MLpp project wiki!
 
-**WARNING:** This wiki is a **Work in Progress** !
+**WARNING:** This wiki (and project) is a **Work in Progress** !
 
-Here is the (planned) plan of the Wiki (sub-pages/sub-sections) :
+## Table of content
+
+Here is the (planned) table of content of the Wiki (sub-pages and sub-sections) :
 
 - Introduction to osu! and osu! keywords (low prio)
     - osu! presentation (for non-players)
