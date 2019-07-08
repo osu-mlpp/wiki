@@ -27,7 +27,8 @@ Here is the (planned) plan of the Wiki (sub-pages/sub-sections) :
     - ... ?
 - MLpp (Machine Learning performance points) system proposal
     - project goals / general idea
-    - note about v2, modes and mods.
+    - Note about v2, modes and mods.
+    - Note about values considered in scores (only max-combo, acc and miss-counts ?)
     - Part 1 : PP from Statistics (highest prio)
         - stat #1 : Map appearance in players top 100 and correlation with their pp.
             - Definition
@@ -50,8 +51,15 @@ Here is the (planned) plan of the Wiki (sub-pages/sub-sections) :
             - From whole map to map-patterns
         - Conclusions (Resumee of how we will proceed)
     - Part 2 : Neural Network (mid prio)
+        - Network output (Multiple choices)
+        - Network input (Multiple choices)
+        - Network shape and structure (Multiple choices)
+        - From patterns pp back to whole map
+            - ... ?
         - ...
     - Part 3 : MLpp in production (low prio)
+        - ppv2 + mlpp mix ?
+        - Live trainability
         - ...
 - Required Data for the project / Request to peppy (high prio)
 - Roadmap and Schedule (will be merged "merged" into the wiki)
