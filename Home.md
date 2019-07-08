@@ -60,8 +60,10 @@ Here is the (planned) table of content of the Wiki :
         - Network shape and structure (Multiple choices)
         - From patterns back to whole map pp
             - ... ?
-        - Sliting the work
+        - Sliting the work (simplify training)
             - Acc/Aim/Speed/? neural networks
+        - Dataset augmentation (?)
+        - ...
     - Part 3 : MLpp in production (low prio)
         - ppv2 + mlpp mix ?
         - Live trainability
