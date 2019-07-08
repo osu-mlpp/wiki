@@ -30,9 +30,9 @@ Here is the (planned) table of content of the Wiki (sub-pages and sub-sections) 
     - definition of skill
     - ... ?
 - MLpp (Machine Learning performance points) system proposal
-    - project goals / general idea
-    - Note about v2, modes and mods.
-    - Note about values considered in scores (only max-combo, acc and miss-counts ?)
+    - project goals / general idea (highest prio)
+    - Note about v2, modes and mods (high prio)
+    - Note about values considered in scores (only max-combo, acc and miss-counts ?) (high prio)
     - Part 1 : PP from Statistics (highest prio)
         - stat #1 : Map appearance in players top 100 and correlation with their pp.
             - Definition
@@ -66,5 +66,51 @@ Here is the (planned) table of content of the Wiki (sub-pages and sub-sections) 
         - Live trainability
         - ...
 - Required Data for the project / Request to peppy (high prio)
-- Roadmap and Schedule (will be merged "merged" into the wiki)
+- Roadmap and Schedule (high prio)
 - ... ?
+
+
+## Introduction to osu! and osu! keywords
+
+**TODO** (low prio)
+
+## Introduction to previous pp systems and project motivation
+
+**TODO** (mid prio)
+
+## Introduction to mathematical and technical definitions
+
+**TODO** (while writting)
+
+## MLpp (Machine Learning performance points) system proposal
+### project goals / general idea
+
+**TODO** (highest prio)
+
+### Note about v2, modes and mods
+
+**TODO** (high prio)
+
+### Note about values considered in scores (only max-combo, acc and miss-counts ?)
+
+**TODO** (high prio)
+
+### Part 1 : PP from Statistics
+
+**TODO** (highest prio)
+
+### Part 2 : Neural Network
+
+**TODO** (mid prio)
+
+### Part 3 : MLpp in production
+
+**TODO** (low prio)
+
+## Required Data for the project / Request to peppy
+
+**TODO** (high prio)
+
+## Roadmap and Schedule
+
+**TODO** (high prio)
