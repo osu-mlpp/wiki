@@ -6,7 +6,7 @@ Welcome to the osu! MLpp project wiki!
 
 ## Table of content
 
-Here is the (planned) table of content of the Wiki (sub-pages and sub-sections) :
+Here is the (planned) table of content of the Wiki :
 
 - Introduction to osu! and osu! keywords (low prio)
     - osu! presentation (for non-players)
@@ -58,9 +58,10 @@ Here is the (planned) table of content of the Wiki (sub-pages and sub-sections) 
         - Network output (Multiple choices)
         - Network input (Multiple choices)
         - Network shape and structure (Multiple choices)
-        - From patterns pp back to whole map
+        - From patterns back to whole map pp
             - ... ?
-        - ...
+        - Sliting the work
+            - Acc/Aim/Speed/? neural networks
     - Part 3 : MLpp in production (low prio)
         - ppv2 + mlpp mix ?
         - Live trainability
