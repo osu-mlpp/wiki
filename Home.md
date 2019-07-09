@@ -1,14 +1,12 @@
-# MLpp Project wiki
+# MLpp Project wiki - Tablet of content
 
 Welcome to the osu! MLpp project wiki!
 
 **WARNING:** This wiki (and project) is a **Work in Progress** !
 
-## Table of content
-
 Here is the (planned) table of content of the Wiki :
 
-- Introduction to osu! and osu! keywords (low prio)
+- [Introduction to osu! and osu! keywords (low prio)](Intro-osu.md)
     - osu! presentation (for non-players)
     - Dictionary (for non-players and casuals)
         - osu! general keywords (Modes, mods, beatmaps/maps, mapsets, ...)
@@ -17,7 +15,7 @@ Here is the (planned) table of content of the Wiki :
         - osu! beatmap values ()
         - osu! mods (HD, HR, DT, EZ, FL, ...)
         - ... ?
-- Introduction to previous pp systems and project motivation (mid prio)
+- [Introduction to previous pp systems and project motivation (mid prio)](Intro-pp.md)
     - pp system definition
     - rought presentation of pp v1
     - pp v1 problems
@@ -25,15 +23,15 @@ Here is the (planned) table of content of the Wiki :
     - pp v2 problems
     - general advantages and problems of statistical method
     - how Machine Learning can help
-- Introduction to mathematical and technical definitions
+- [Introduction to mathematical and technical definitions](Intro-tech.md)
     - Maths definitions...
     - definition of skill
     - ... ?
-- MLpp (Machine Learning performance points) system proposal
+- [MLpp (Machine Learning performance points) system proposal](Proposal.md)
     - project goals / general idea (highest prio)
     - Note about v2, modes and mods (high prio)
     - Note about values considered in scores (only max-combo, acc and miss-counts ?) (high prio)
-    - Part 1 : PP from Statistics (highest prio)
+    - [Part 1 : PP from Statistics (highest prio)](Part1-stats.md)
         - stat #1 : Map appearance in players top 100 and correlation with their pp.
             - Definition
             - Limited usage : Detect over/under-rated map & rate system balance
@@ -54,7 +52,7 @@ Here is the (planned) table of content of the Wiki :
             - Iterations and convergence
             - From whole map to map-patterns
         - Conclusions (Resumee of how we will proceed)
-    - Part 2 : Neural Network (mid prio)
+    - [Part 2 : Neural Network (mid prio)](Part2-NN.md)
         - Network output (Multiple choices)
         - Network input (Multiple choices)
         - Network shape and structure (Multiple choices)
@@ -64,56 +62,10 @@ Here is the (planned) table of content of the Wiki :
             - Acc/Aim/Speed/? neural networks
         - Dataset augmentation (?)
         - ...
-    - Part 3 : MLpp in production (low prio)
+    - [Part 3 : MLpp in production (low prio)](Part3-production.md)
         - ppv2 + mlpp mix ?
         - Live trainability
         - ...
-- Required Data for the project / Request to peppy (high prio)
-- Roadmap and Schedule (high prio)
+- [Required Data for the project / Request to peppy (high prio)](Data-request.md)
+- [Roadmap and Schedule (high prio)](Roadmap.md)
 - ... ?
-
-
-## Introduction to osu! and osu! keywords
-
-**TODO** (low prio)
-
-## Introduction to previous pp systems and project motivation
-
-**TODO** (mid prio)
-
-## Introduction to mathematical and technical definitions
-
-**TODO** (while writting)
-
-## MLpp (Machine Learning performance points) system proposal
-### project goals / general idea
-
-**TODO** (highest prio)
-
-### Note about v2, modes and mods
-
-**TODO** (high prio)
-
-### Note about values considered in scores (only max-combo, acc and miss-counts ?)
-
-**TODO** (high prio)
-
-### Part 1 : PP from Statistics
-
-**TODO** (highest prio)
-
-### Part 2 : Neural Network
-
-**TODO** (mid prio)
-
-### Part 3 : MLpp in production
-
-**TODO** (low prio)
-
-## Required Data for the project / Request to peppy
-
-**TODO** (high prio)
-
-## Roadmap and Schedule
-
-**TODO** (high prio)
