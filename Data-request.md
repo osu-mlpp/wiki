@@ -1,3 +1,3 @@
-# Required Data for the project / Request to peppy
+# Request of required Data
 
 **TODO** (high prio)

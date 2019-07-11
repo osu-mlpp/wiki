@@ -6,7 +6,7 @@ Welcome to the osu! MLpp project wiki!
 
 Here is the (planned) table of content of the Wiki :
 
-- [Introduction to osu! and osu! keywords (low prio)](Intro-osu.md)
+- [Introduction to osu! and osu! keywords](Intro-osu.md) (low prio)
     - osu! presentation (for non-players)
     - Dictionary (for non-players and casuals)
         - osu! general keywords (Modes, mods, beatmaps/maps, mapsets, ...)
@@ -15,7 +15,7 @@ Here is the (planned) table of content of the Wiki :
         - osu! beatmap values ()
         - osu! mods (HD, HR, DT, EZ, FL, ...)
         - ... ?
-- [Introduction to previous pp systems and project motivation (mid prio)](Intro-pp.md)
+- [Introduction to previous pp systems and project motivation](Intro-pp.md) (mid prio)
     - pp system definition
     - rought presentation of pp v1
     - pp v1 problems
@@ -31,7 +31,7 @@ Here is the (planned) table of content of the Wiki :
     - project goals / general idea (highest prio)
     - Note about v2, modes and mods (high prio)
     - Note about values considered in scores (only max-combo, acc and miss-counts ?) (high prio)
-    - [Part 1 : PP from Statistics (highest prio)](Part1-stats.md)
+    - [Part 1 : PP from Statistics](Part1-stats.md) (highest prio)
         - stat #1 : Map appearance in players top 100 and correlation with their pp.
             - Definition
             - Limited usage : Detect over/under-rated map & rate system balance
@@ -52,7 +52,7 @@ Here is the (planned) table of content of the Wiki :
             - Iterations and convergence
             - From whole map to map-patterns
         - Conclusions (Resumee of how we will proceed)
-    - [Part 2 : Neural Network (mid prio)](Part2-NN.md)
+    - [Part 2 : Neural Network](Part2-NN.md) (mid prio)
         - Network output (Multiple choices)
         - Network input (Multiple choices)
         - Network shape and structure (Multiple choices)
@@ -62,10 +62,11 @@ Here is the (planned) table of content of the Wiki :
             - Acc/Aim/Speed/? neural networks
         - Dataset augmentation (?)
         - ...
-    - [Part 3 : MLpp in production (low prio)](Part3-production.md)
+    - [Part 3 : MLpp in production](Part3-production.md) (low prio)
         - ppv2 + mlpp mix ?
         - Live trainability
         - ...
-- [Required Data for the project / Request to peppy (high prio)](Data-request.md)
-- [Roadmap and Schedule (high prio)](Roadmap.md)
-- ... ?
+- [Request of required Data](Data-request.md) (high prio)
+- [Roadmap and Schedule](Roadmap.md) (high prio)
+- [Contributors](Contributors.md)
+- [Logs of MLpp contributions](Logs.md)
