@@ -17,6 +17,7 @@ Here is the (planned) table of content of the Wiki :
         - ... ?
 - [Introduction to previous pp systems and project motivation](Intro-pp.md) (mid prio)
     - pp system definition
+    - quality of a pp system
     - rought presentation of pp v1
     - pp v1 problems
     - rought presentation of pp v2
