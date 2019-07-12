@@ -30,7 +30,7 @@ Here is the (planned) table of content of the Wiki :
     - ... ?
 - [MLpp (Machine Learning performance points) system proposal](Proposal.md)
     - project goals / general idea (highest prio)
-    - Note about v2, modes and mods (high prio)
+    - Notes about v2, modes and mods (high prio)
     - Note about values considered in scores (only max-combo, acc and miss-counts ?) (high prio)
     - [Part 1 : PP from Statistics](Part1-stats.md) (highest prio)
         - stat #1 : Map appearance in players top 100 and correlation with their pp.
