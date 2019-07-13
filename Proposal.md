@@ -27,10 +27,13 @@ Since mods in osu! completely change the difficulty of a beatmap, to simplify th
 **TODO**: Evaluate part. Define "ranking panel" ?
 
 As of today, in ppv2, only max-combo, miss-count and accuracy are considered in the players score to determine the pp value of the score. While we can do better than ppv2 with only those 3 values, we should be able to do even better if we use other meaningfull values.
+
 One thing that is completely ignored is the non-max combos. The combo you do in other parts doesn't matter, which means that, outside of the max combo part, misses all have the same impact on pps no matter where they are and slider breaks too, as they have the same impact as hitcircle 100s and only impact accuracy.
+
 While the pp is not impacted by non-maximum combos, the score is, both in score v1 and score v2, which makes it even more meaningfull to use the non-maximum combos in pp calculation.
 The scorev1 score is **roughly proportionnal** to `sum_i(combo_i^2) * accuracy` and I think using the sum of squared combos in the pp value estimation would help getting more accurate values. Unthanksfully, the values of non-max combos are not stored in the score database, but it's possible to estimate the value of the sum of squared combos by dividing the total score of the player by it's accuracy and the [other factors](https://osu.ppy.sh/help/wiki/Score/#score).
 It's also possible to use the score itself instead of trying to estimate the sum of the squared combos, as the multiplication by the accuracy is not necesarly unwanted, and the other factors are constants.
+
 In the future we might want to add more values into the mix, but I guess we should be fine with what we have for now, and adding much more values would reduce the "arcade" aspect of the game if they are not displayed in the ranking panel and easily understable by the players.
 
 ## Link to details
