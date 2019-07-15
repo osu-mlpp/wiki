@@ -18,14 +18,14 @@ Here is the (planned) table of content of the Wiki :
 - [Introduction to previous pp systems and project motivation](Intro-pp) (mid prio)
     - pp system definition
     - quality of a pp system
-    - rought presentation of pp v1
+    - rough presentation of pp v1
     - pp v1 problems
-    - rought presentation of pp v2
+    - rough presentation of pp v2
     - pp v2 problems
     - general advantages and problems of statistical method
     - how Machine Learning can help
 - [Introduction to mathematical and technical definitions](Intro-tech)
-    - Maths definitions...
+    - Math definitions...
     - definition of skill
     - ... ?
 - [MLpp (Machine Learning performance points) system proposal](Proposal)
@@ -41,7 +41,7 @@ Here is the (planned) table of content of the Wiki :
             - Current pp as approximation of skill
             - pp estimation from stats
             - Advantages
-            - Outliers/Nuissance and countermeasures
+            - Outliers/Nuisance and countermeasures
                 - Why under/over-ranked players don't matter much
                 - Players with < 100 top-plays
                 - Non-passes and non-finished plays
@@ -52,14 +52,14 @@ Here is the (planned) table of content of the Wiki :
             - Rank to pp curve shape and potential remodeling
             - Iterations and convergence
             - From whole map to map-patterns
-        - Conclusions (Resumee of how we will proceed)
+        - Conclusions (Summary of how we will proceed)
     - [Part 2 : Neural Network](Part2-NN) (mid prio)
         - Network output (Multiple choices)
         - Network input (Multiple choices)
         - Network shape and structure (Multiple choices)
         - From patterns back to whole map pp
             - ... ?
-        - Spliting the work (simplify training)
+        - Splitting the work (simplify training)
             - Acc/Aim/Speed/? neural networks
         - Dataset augmentation (?)
         - ...
