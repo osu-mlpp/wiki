@@ -28,9 +28,11 @@ From that, if we have `P` we can re-estimate the pp values of previous scores :
 - Find the value `λ` which satisfies the equation above
 - redefine the pp value of the score as `λ/20`
 
+It is also possible to define `λ` in other ways than from a simple threshold `t` that could achieve better results and we will explore those other possibilities, but the idea will remain similar.
+
 #### Step 4 - Convergence of the system
-We claim that, if the threshold `p` is well chosen, this new pp value should be a better estimation that the level estimation metric used as input for l.
-To analyse that, let's compare two curves `f(l)=P(b1,s1,l)` and `g(l)=P(b2,s2,l)` for two pairs of beatmaps and score `x1 = (b1,s1)` and `x2 = (b2,s2)` :
+We claim that, if the threshold `t` is well chosen, this new pp value should be a better estimation that the level estimation metric used as input for l.
+To analyse that, let's compare two curves `f(l)=P(b1,s1,l)` and `g(l)=P(b2,s2,l)` for two pairs of beatmaps and scores `x1 = (b1,s1)` and `x2 = (b2,s2)` :
 - if `x1` is harder to achieve than `x2` for players of level `l`, then `f(l) < g(l)` (the probability that a player of level `l` achieves `x1` is lower than the probability that he achieves `x2`).
 - From that point, if two `x1` and `x2` that are estimated as having the same value in the input skill estimation system, if `x1` is more underweighted that `x2`, this means that `x1` is harder than `x2` for at least some players of skill level `l`, which means that we will have `f(l) < g(l)` in some part of the curve.
 - Following that, if the threshold `t` is well chosen, the score `x1` will be given a lower pp value than `x2` using the method above.
@@ -41,7 +43,7 @@ This also means that we can apply this system iteratively to converge progressel
 The difficult tasks that remains are finding a good estimation the function `P`, and choosing a good threshold `t`
 
 ### Part 2 : Estimating P from statistics
-TODO
+Since P is a probabily, it is natural to try to estimate it from statistics.
 
 ### Part 3 : Estimating P using Machine Learning
 TODO
