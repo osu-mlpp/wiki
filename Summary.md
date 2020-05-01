@@ -19,7 +19,8 @@ For a beatmap b and a score s we can then define the function :
 - This function maps the level estimation domain (for example [0,+inf] if we use ppv2 as level estimation) to the probability range [0,1].
 - This function is assumed to be monotonically increasing since an increase of the skill estimate is correlated with and increase of actual skill which itself is correlated with an increase in probability of doing a better score.
 - We assume that for maps and scores that are sufficiently "doable", for any value `t` in `(0,1)`, there is a value `λ` such that  
-<img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_{(b,s)}(l) = P(b,s,l) \gt t">
+<img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_{(b,s)}(l) = P(b,s,l) \gt t">  
+Note : <img src="https://render.githubusercontent.com/render/math?math=\iff"> means "if and only if" or "is equivalent to". This means that there is a value `λ` such that if <img src="https://render.githubusercontent.com/render/math?math=l \gt \lambda"> then <img src="https://render.githubusercontent.com/render/math?math=P(b,s,l) \gt t"> and vice-versa.
 
 #### 1.3 - Defining a new pp value from f
 Note that the weighted average (using the same top-play weights as ppv2) pp value of the maps considered in a player's pp calculation is approximately 1/20th of the player pp value.  
@@ -42,18 +43,36 @@ While applying this system does not give a perfect system, this should give a be
 This also means that we can apply this system iteratively to converge progressely to an "ideal" system, and progressively get away from the bias induced by the original input system.
 The difficult tasks that remains are finding a good estimation the function `P`, and choosing a good threshold `t`
 
-### 2 : Estimating P from statistics
+### 2 - Estimating P from statistics
 Since P is a probabily, it is natural to try to estimate it from statistics.
 
+#### 2.1 - Sampling
 For some pair beatmap/score `x = (b,s)`, we can try to estimate the curve `f(l)=P(b,s,l)` in the following way :
 We define sampling points `L_i` with `i` in `{1,2,...,n}` at which we will try to estimate `f(L_i)`.
 To do so, the easiest way is to take `S` the set of all scores on beatmap b done by players of level `l` in `[L_i-r,L_i+r]` for some small positive value `r` and estimate `f(L_i)` as the percentage of scores in `S` that are better than `s`, with "better" as defined previously.
 A good starting choice the sampling points `L_i` can be `100*i` if L is defined in with ppv2, and then defining `r = 50` seems a natural choice to cover the whole spectrum of players.
+An other way to sample can be to give scores a weight depending on player's level distance to the sampling point `|L_i - l|`.
+It is also possible to define the sampling points from other metrics like play time but ppv2 seems to be the best skill estimation available as of now, and a better input level estimation means a faster convergence.
+It is also possible to use the ppv2 rank instead, or any monotone function of the rank, like `h(rank) = log(active_player_count)-log(rank)` (We will explore this possibility later), as it keeps the ordering of ppv2 while allowing us to choose what we want the final pp to rank curve to look like.
 
 Once we have the estimation of the values of `f(L_i)` for all `L_i`, we can then interpolate to estimate the value of `f(l)` for any `l`, and estimate the pp value of the score by applying the method defined in 1.3.
 
-### 3 : Biases
-TODO
+#### 2.2 : Biases
+The statistic above is subject to many biases and other aspect of difficulty that we ignored till then. We will need to identify them, estimate their impact on the results, and eventually apply corrections.
+Examples of such biases are :
+- Players where pp provides a very bad skill estimation (new players with low amount of scores, derankers)
+- Players not willing to finish the map even while he could clear it
+- Different kinds of players playing different kinds of maps
+- The amount of retries of a player on the map
+- Variance in rarity of patterns in currently available beatmaps, and how trained the player are on those patterns
+- Distribution of ages of scores (which is correlated with the age of the beatmap)
 
-### Part 4 : Estimating P using Machine Learning
-TODO
+#### 2.3 - Lack of data
+While these statistics should allow to estimate the pp value of a lot of scores, there will be imprecissions depending on how much scores we have in our samples.
+We will try to measure this imprecision in order to be able to know which pp values are meaningfull and which are not.
+For some scores, it might will be impossible to do any good estimation as we will lack data, especially for the top players that do unique scores.
+For that reason, we will need to be able to predict `P` on beatmap/scores that don't have statistics, and this is where we will use Machine learning.
+
+### 3 : Estimating P using Machine Learning
+
+TODO...
