@@ -5,9 +5,8 @@ The goal of this project is to try to define a more accurate way to evaluate a s
 ### Part 1 - Probability and Theory
 #### Step 1 - The function P
 We first define the following function :  
-![P(b,s,l) = Probability that a random player of skill level l can do a score s or better on beatmap b](
-    https://latex.codecogs.com/svg.latex?P(b,s,l)%20=\text{Probability%20that%20a%20random%20player%20of%20skill%20level%20l%20can%20do%20a%20score%20s%20or%20better%20on%20beatmap%20b}
-)  
+<img src="https://render.githubusercontent.com/render/math?math=P(b,s,l) =\text{Probability that a random player of skill level l can do a score s or better on beatmap b}">
+
 where :
 - `b` represents a beatmap (which we will often refer as map) with a defined gamemode and set of mods. (But we will first focus on osu! std gamemode)
 - `s` represents a score defined as a tuple of this kind : `(max_combo, miss_count, accuracy, etc...)` (The list of values considered need to be defined)
@@ -16,11 +15,11 @@ where :
 
 #### Step 2 - The curve f
 For a beatmap b and a score s we can then define the function :  
-![f_{(b,s)}(l) = P(b,s,l)](https://latex.codecogs.com/svg.latex?f_{(b,s)}(l)%20=%20P(b,s,l))
+<img src="https://render.githubusercontent.com/render/math?math=f_{(b,s)}(l) = P(b,s,l)">
 - This function maps the level estimation domain (for example [0,+inf] if we use ppv2 as level estimation) to the probability range [0,1].
 - This function is assumed to be monotonically increasing since an increase of the skill estimate is correlated with and increase of actual skill which itself is correlated with an increase in probability of doing a better score.
 - We assume that for maps and scores that are sufficiently "doable", for any value `t` in `(0,1)`, there is a value `λ` such that  
-  ![∀l, l>λ <=> f_{(b,s)}(l) = P(b,s,l) > t](https://latex.codecogs.com/svg.latex?\forall%20l,%20l>\lambda%20<=>%20f_{(b,s)}(l)%20=%20P(b,s,l)%20>%20t)
+<img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_{(b,s)}(l) = P(b,s,l) \gt t">
 
 #### Step 3 - Defining a new pp value from f
 Note that the weighted average (using the same top-play weights as ppv2) pp value of the maps considered in a player's pp calculation is approximately 1/20th of the player pp value.  
