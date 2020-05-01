@@ -16,7 +16,7 @@ where :
 #### 1.2 - The curve f
 For a beatmap b and a score s we can then define the function :  
 <img src="https://render.githubusercontent.com/render/math?math=f_{(b,s)}(l) = P(b,s,l)">
-- This function maps the level estimation domain (for example [0,+inf] if we use ppv2 as level estimation) to the probability range [0,1].
+- This function maps the level estimation domain (for example [0,+∞] if we use ppv2 as level estimation) to the probability range [0,1].
 - This function is assumed to be monotonically increasing since an increase of the skill estimate is correlated with and increase of actual skill which itself is correlated with an increase in probability of doing a better score.
 - We assume that for maps and scores that are sufficiently "doable", for any value `t` in `(0,1)`, there is a value `λ` such that  
 <img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_{(b,s)}(l) = P(b,s,l) \gt t">  
@@ -70,7 +70,7 @@ Examples of such biases are :
 #### 2.3 - Lack of data
 While these statistics should allow to estimate the pp value of a lot of scores, there will be imprecissions depending on how much scores we have in our samples.
 We will try to measure this imprecision in order to be able to know which pp values are meaningfull and which are not.
-For some scores, it might will be impossible to do any good estimation as we will lack data, especially for the top players that do unique scores.
+For some scores, it will be impossible to do any good estimation as we will lack data, especially for the top players that do unique scores.
 For that reason, we will need to be able to predict `P` on beatmap/scores that don't have statistics, and this is where we will use Machine learning.
 
 ### 3 : Estimating P using Machine Learning

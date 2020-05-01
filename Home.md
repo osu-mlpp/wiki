@@ -2,7 +2,8 @@
 
 Welcome to the osu! MLpp project wiki!
 
-**WARNING:** This wiki (and project) is a **Work in Progress** !
+**WARNING:** This wiki (and project) is a **Work in Progress** and probably has **outdated information** !
+Check out the [Summary](Summary) for the most up-to-date information.
 
 Here is the (planned) table of content of the Wiki :
 
