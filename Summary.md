@@ -4,8 +4,9 @@ The goal of this project is to try to define a more accurate way to evaluate a s
 ## General idea
 ### 1 - Probability and Theory
 #### 1.1 - The function P
-We first define the following function :  
-<img src="https://render.githubusercontent.com/render/math?math=P(b,s,l) =\text{Probability that a random player of skill level l can do better that a score s on beatmap b}">
+We first define the following function :
+
+<img src="https://render.githubusercontent.com/render/math?math=\large P(b,s,l) =\text{Probability that a random player of skill level l can do better that a score s on beatmap b}">
 
 where :
 - `b` represents a beatmap (which we will often simply refer as map) with a defined gamemode and set of mods. (But we will first focus on osu! std gamemode)
@@ -19,13 +20,16 @@ To simplify the writing even more, we say that `x` and the tuple `(b,s)` are int
 When we are talking of a score, it should be clear from the context whether it is a universal score (`s`) or a beatmap-specific score (`x`) but we will otherwise specify.
 
 #### 1.2 - The curve f
-For a score x we can then define the function :  
-<img src="https://render.githubusercontent.com/render/math?math=f_{(b,s)}(l) = f_x(l) = P(x,l)">
+For a score x we can then define the function :
+
+<img src="https://render.githubusercontent.com/render/math?math=\large f_{(b,s)}(l) = f_x(l) = P(x,l)">
 
 - This function maps the level estimation domain (for example [0,+∞] if we use ppv2 as level estimation) to the probability range [0,1].
 - This function is assumed to be monotonically increasing since an increase of the skill estimate is correlated with and increase of actual skill which itself is correlated with an increase in probability of doing a better score.
-- We assume that for maps and scores that are sufficiently "doable", for any value `t` in `(0,1)`, there is a value `λ` such that  
-<img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_x(l) = P(x,l) \gt t">
+
+We then assume that for maps and scores that are sufficiently "doable", for any value `t` in `(0,1)`, there is a value `λ` such that :
+
+<img src="https://render.githubusercontent.com/render/math?math=\large \forall l, l \gt \lambda \iff f_x(l) = P(x,l) \gt t">
 
 Note : <img src="https://render.githubusercontent.com/render/math?math=\iff"> means "if and only if" or "is equivalent to". This means that there is a value `λ` such that if <img src="https://render.githubusercontent.com/render/math?math=l \gt \lambda"> then <img src="https://render.githubusercontent.com/render/math?math=P(x,l) \gt t"> and vice-versa.
 
