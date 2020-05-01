@@ -16,10 +16,12 @@ where :
 #### 1.2 - The curve f
 For a beatmap b and a score s we can then define the function :  
 <img src="https://render.githubusercontent.com/render/math?math=f_{(b,s)}(l) = P(b,s,l)">
+
 - This function maps the level estimation domain (for example [0,+∞] if we use ppv2 as level estimation) to the probability range [0,1].
 - This function is assumed to be monotonically increasing since an increase of the skill estimate is correlated with and increase of actual skill which itself is correlated with an increase in probability of doing a better score.
 - We assume that for maps and scores that are sufficiently "doable", for any value `t` in `(0,1)`, there is a value `λ` such that  
-<img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_{(b,s)}(l) = P(b,s,l) \gt t">  
+<img src="https://render.githubusercontent.com/render/math?math=\forall l, l \gt \lambda \iff f_{(b,s)}(l) = P(b,s,l) \gt t">
+
 Note : <img src="https://render.githubusercontent.com/render/math?math=\iff"> means "if and only if" or "is equivalent to". This means that there is a value `λ` such that if <img src="https://render.githubusercontent.com/render/math?math=l \gt \lambda"> then <img src="https://render.githubusercontent.com/render/math?math=P(b,s,l) \gt t"> and vice-versa.
 
 #### 1.3 - Defining a new pp value from f
