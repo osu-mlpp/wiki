@@ -10,7 +10,7 @@ We first define the following function :
 where :
 - `b` represents a beatmap (which we will often refer as map) with a defined gamemode and set of mods. (But we will first focus on osu! std gamemode)
 - `s` represents a score defined as a tuple of this kind : `(max_combo, miss_count, accuracy, etc...)` (The list of values considered need to be defined)
-- doing S or better means doing a score Z that is equal or better in every aspects (equal or higher max_combo AND equal or lower miss_count AND etc...)
+- doing s or better means doing any score that is equal or better in every aspects (equal or higher max_combo AND equal or lower miss_count AND etc...)
 - `l` represents an estimation of the "player skill" (as a single scalar)
 
 #### Step 2 - The curve f
@@ -38,7 +38,7 @@ To analyse that, let's compare two curves `f(l)=P(b1,s1,l)` and `g(l)=P(b2,s2,l)
 #### Conclusion
 While applying this system does not give a perfect system, this should give a better system that the one used as input for the estimation of the level of the players.
 This also means that we can apply this system iteratively to converge progressely to an "ideal" system, and progressively get away from the bias induced by the original input system.
-All the difficulty that remains, is how to estimate the function `P`, and how to choose a good threshold `t`
+The difficult tasks that remains are finding a good estimation the function `P`, and choosing a good threshold `t`
 
 ### Part 2 : Estimating P from statistics
 TODO
