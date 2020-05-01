@@ -1,8 +1,10 @@
-## Goal
-The goal of this project is to try to define a more accurate way to evaluate a score's pp value on a map using existing map statistics and machine learning.
+# MLpp Summary
+This document is trying to be a consise yet precise Summary of the main concepts behind the MLpp project, the goal of which is to try to define a more accurate way to evaluate a score's pp value on a map using existing map statistics and machine learning.
 
-## General idea
+## Summary
+
 ### 1 - Probability and Theory
+
 #### 1.1 - The function P
 We first define the following function :
 
@@ -12,7 +14,7 @@ where :
 - `b` represents a beatmap (which we will often simply refer as map) with a defined gamemode and set of mods. (But we will first focus on osu! std gamemode)
 - `s` represents a score defined as a tuple of this kind : `(max_combo, miss_count, accuracy, etc...)` (The list of values considered need to be defined)
 - "better" means doing any score that is equal or better in every aspects (equal or higher max_combo AND equal or lower miss_count AND etc...)
-- `l` represents an estimation of the "player skill" (as a single scalar)
+- `l` represents an estimation of the "player skill" (as a single scalar, can be ppv2)
 
 Also, in the future, a map (`b`) will almost always include the information of the set of mods (and of course the gamemode) it is being played with, unless it is precised otherwise.  
 In the same way, we will often refer the tuple `x = (b,s)` as "score", since a score has no meaning without the map it was made on.  
@@ -55,6 +57,7 @@ This also means that we can apply this system iteratively to converge progressel
 The difficult tasks that remains are finding a good estimation the function `P`, and choosing a good threshold `t`
 
 ### 2 - Estimating P from statistics
+
 Since P is a probabily, it is natural to try to estimate it from statistics.
 
 #### 2.1 - Sampling
