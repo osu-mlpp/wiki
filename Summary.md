@@ -74,11 +74,11 @@ Once we have the estimation of the values of `f(L_i)` for all `L_i`, we can then
 #### 2.2 : Biases
 The statistic above is subject to many biases and other aspect of difficulty that we ignored till then. We will need to identify them, estimate their impact on the results, and eventually apply corrections.
 Examples of such biases are :
-- Players where pp provides a very bad skill estimation (new players with low amount of scores, derankers)
-- Players not willing to finish the map even while he could clear it
-- Different kinds of players playing different kinds of maps
+- Players where pp provides a very bad skill estimation (new players with low amount of scores, derankers, specialized players)
+- Players not willing to finish the map even though they could clear it
+- On a map of X skillset, the players that played it are more likely to be good at X than a random player
 - The amount of retries of a player on the map
-- Variance in rarity of patterns in currently available beatmaps (partially due to pp mapping), and it's effects on how trained the player are on those patterns
+- Mapping meta, that is variance in rarity of patterns in currently available beatmaps (partially due to pp mapping), and it's effects on how trained the player are on those patterns
 - Distribution of ages of scores (which is correlated with the age of the beatmap)
 
 #### 2.3 - Lack of data
